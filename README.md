@@ -2,6 +2,7 @@
  
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022ICDM)**  
    [[link]](https://ieeexplore.ieee.org/document/10027673)
+   <details><summary>概要</summary><div>
    ツイートの情報(ハッシュタグやエンティティなど)を，ツイートノードと情報ノードでエッジを形成し異種グラフで表現．これでグラフベースの関係情報を得る．この情報とBERTを組み合わせて悪質ツイート，ユーザの分類を行う．BERT単体，またはBERT+CNN や BERT+LSTMの手法よりも良い結果に．つまり，GNNから有用な構造情報を取得できているということに
  ***
 
