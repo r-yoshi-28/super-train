@@ -1,5 +1,4 @@
 # 論文メモ
- 
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022ICDM)**  
    [[link]](https://ieeexplore.ieee.org/document/10027673)
 GNNとBERTを組み合わせて，悪質ツイートの検出
@@ -15,13 +14,6 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    コロナ患者と，患者の住む市，市のある県などをノードとして異種グラフを作成．GNNより患者の感染症例を分類．複雑なアプローチを施したが結果は改善されず．つまり，今回作成した異種グラフではニューラルネットワークの学習が困難だった．原因としてはクラスの不均衡さ，不十分な特徴量が考えられる．感染者の居住地情報が感染症例の分類に役立つと考えていたが，その情報のみでは不十分だった模様．データセットの改善や強力なGNNが解決策となると考えられる．
 
 
-- [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022JMIR)**  
-   [[link]](https://medinform.jmir.org/2022/5/e37831)
-   BERTを用いてワクチンツイートの分類ができるか検証．
-   <details><summary>概要</summary><div>
-    ワクチン関連のツイートの特徴として，賛成反対いがいにも，曖昧，皮肉，無関係といったツイートが多くありこれらもうまく分類できるかどうかを検証．CamemBERT というフランス語BERTモデルを微調整して使用．ツイートは，(1) 賛成 反対 中立， (2) コンテンツの種類 (科学的，政治的，社会的，またはワクチン接種の状況) に分類．(1)の分類は困難，(2)の分類は(1)よりかは高いがまずまずの結果に．そこで，ツイート本文が170文字以上のものに限定して再度実験を行うと，結果が改善された．コメント：ツイートのラベル参考になりそう．ちなみにラベル付けは手動で行っていた．
-
-
 - [x] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
    [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
    異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
@@ -29,44 +21,23 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
     最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
 
 
-- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
-   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
-   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+- [ ] **CSI: A Hybrid Deep Model for Fake News Detection(2017ACM)**  
+   [[link]](https://arxiv.org/abs/1703.06959)
+   フェイクニュース関連．ユーザ埋め込みについて参考になりそう
    <details><summary>概要</summary><div>
-    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+    調査中
 
-
-- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
-   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
-   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+- [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022JMIR)**  
+   [[link]](https://medinform.jmir.org/2022/5/e37831)
+   BERTを用いてワクチンツイートの分類ができるか検証．
    <details><summary>概要</summary><div>
-    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+    ワクチン関連のツイートの特徴として，賛成反対いがいにも，曖昧，皮肉，無関係といったツイートが多くありこれらもうまく分類できるかどうかを検証．CamemBERT というフランス語BERTモデルを微調整して使用．ツイートは，(1) 賛成 反対 中立， (2) コンテンツの種類 (科学的，政治的，社会的，またはワクチン接種の状況) に分類．(1)の分類は困難，(2)の分類は(1)よりかは高いがまずまずの結果に．そこで，ツイート本文が170文字以上のものに限定して再度実験を行うと，結果が改善された．コメント：ツイートのラベル参考になりそう．ちなみにラベル付けは手動で行っていた．
 
-
-- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
-   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
-   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+- [ ] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022MIPRO)**  
+   [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
+   新型コロナウイルス感染症ツイートのGNN基づく分類
    <details><summary>概要</summary><div>
-    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+    調査中
 
 
-- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
-   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
-   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
-   <details><summary>概要</summary><div>
-    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
-
-    
-- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
-   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
-   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
-   <details><summary>概要</summary><div>
-    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
-
-
-- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
-   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
-   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
-   <details><summary>概要</summary><div>
-    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
 
