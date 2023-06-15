@@ -28,3 +28,45 @@
    <details><summary>概要</summary><div>
     最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
 
+
+- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
+   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
+   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+   <details><summary>概要</summary><div>
+    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+
+
+- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
+   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
+   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+   <details><summary>概要</summary><div>
+    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+
+
+- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
+   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
+   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+   <details><summary>概要</summary><div>
+    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+
+
+- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
+   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
+   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+   <details><summary>概要</summary><div>
+    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+
+    
+- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
+   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
+   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+   <details><summary>概要</summary><div>
+    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+
+
+- [ ] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs(2022ACM)**  
+   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
+   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+   <details><summary>概要</summary><div>
+    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
+
