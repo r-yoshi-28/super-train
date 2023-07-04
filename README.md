@@ -21,11 +21,11 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
     最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
 
 
-- [ ] **CSI: A Hybrid Deep Model for Fake News Detection(2017ACM)**  
+- [x] **CSI: A Hybrid Deep Model for Fake News Detection(2017ACM)**  
    [[link]](https://arxiv.org/abs/1703.06959)
-   フェイクニュース関連．ユーザ埋め込みについて参考になりそう
+   フェイクニュース検出
    <details><summary>概要</summary><div>
-    調査中
+    フェイクニュースの自動検出の際に，Capture，Score，Integrateという3つのモジュールからモデルを提案する．Captureは，RNNを用いてニュース記事に対するユーザの時間的表現を取得，Scoreはユーザの行動に基づいてスコアを学習し，Integrateはこの2つのモジュールの統合を行い，出力で記事がFakeかどうかを判断．ユーザの特徴量は，ユーザについては，どの記事に関与したかに着目していた
 
 - [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022JMIR)**  
    [[link]](https://medinform.jmir.org/2022/5/e37831)
