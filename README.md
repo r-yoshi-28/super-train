@@ -39,5 +39,11 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
     調査中
 
+- [x] **Graph Contrastive Learning with Augmentations(2020NeurIPS)**  
+   [[link]](https://arxiv.org/abs/2010.13902)
+   GNNの対照学習
+   <details><summary>概要</summary><div>
+    対照学習の概念をGNNに適用．Graph Contrastive Learning（GCL）としている．グラフにおける不変表現の学習を促進させることが目的であり，実験により汎化性と頑健性が示された．拡張に関してはノードやエッジの削除，追加などが挙げられており，もう少し検討が必要な模様
+
 
 
