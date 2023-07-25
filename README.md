@@ -65,7 +65,7 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
 
 - [ ] **A Heterogeneous Information Network based Cross Domain Insurance Recommendation System for Cold Start Users(2020SIGIR)**  
    [[link]](https://link.springer.com/article/10.1007/s00521-022-07727-y)
-   テキスト分類GNN よりコンテキスト情報を取得
+   異種ネットワークの情報集約
    <details><summary>概要</summary><div>
     調査中
 
