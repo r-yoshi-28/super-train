@@ -45,11 +45,11 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
     対照学習の概念をGNNに適用．Graph Contrastive Learning（GCL）としている．グラフにおける不変表現の学習を促進させることが目的であり，実験により汎化性と頑健性が示された．拡張に関してはノードやエッジの削除，追加などが挙げられており，もう少し検討が必要な模様
 
-- [ ] **Local discriminative graph convolutional networks for text classification(2023   )**  
+- [x] **Local discriminative graph convolutional networks for text classification(2023   )**  
    [[link]](https://link.springer.com/article/10.1007/s00530-023-01112-y)
    GNN 局所的大域的の両方から学習を行う
    <details><summary>概要</summary><div>
-    調査中
+    従来のテキスト分類GNNの問題点として，正解ラベルと予測ラベルの適合度にのみ着目している点が挙げられる．つまり，グラフが暗黙的に符号化する局所的なクラス内多様性と局所的なクラス間類似性を無視しているといえる．テキスト分類の精度をより向上させるためには，クラス内とクラス間の両方の多様体構造を考慮することが重要となっている．そこで本論文では局所識別グラフ畳み込みネットワーク(LDGCN)を提案する．テキストデータの局所クラス間散布行列と局所クラス内散布行列を構築し，新しいLDGCNの特徴空間では，同じクラスのテキストは互いに密接にマッピングされ，異なるクラスのテキストはできるだけ離れてマッピングされる．
 
 - [x] **Detecting Political Opinions in Tweets through Bipartite Graph Analysis: A Skip Aggregation Graph Convolution Approach(2023   )**  
    [[link]](https://arxiv.org/abs/2304.11367)
