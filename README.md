@@ -35,7 +35,7 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
 
 - [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022MIPRO)**  
    [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
-   GNN基づく新型コロナウイルス感染症ツイート予測
+   GNNに基づく新型コロナウイルス感染症ツイート予測
    <details><summary>概要</summary><div>
     あるユーザが，今後コロナ関連のツイートをするかどうかを予測するモデルを構築．特に，node2vecを使用し，ユーザのフォロワーネットワークから抽出された特性のベクトルとしてユーザをモデル化している．
 
