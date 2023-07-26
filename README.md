@@ -61,13 +61,19 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
     ユーザへの保険推薦のための，異種情報ネットワークに基づくクロスドメイン推薦．
     推薦のために，3つのレベル（関係，ノード，意味）の注意集約(attention aggregation)を採用し，ユーザーと保険商品の表現を得る．具体的には，まず1ホップ異種隣接を集約するための関係的注意を提案する．これは，異なる1ホップ近傍間で同じ集計関数を使用するのではなく，関係の種類ごとに特定の集計関数を学習する．次にメタパスに基づく隣接を集約するためのノード注意，メタパスに基づく隣接集合を集約するための意味的注意を提案する．(メタパスが異なれば，意味も異なるという考えに基づき，メタパスにに基づく隣接の定義を与えている)最後に，関係的注意の集約と意味的注意の集約の結果を元のノード埋め込みに集約し，ノード表現を更新する．
 ---
+- [ ] **Heterogeneous Graph Attention Network(2019WWW)**  
+   [[link]](https://arxiv.org/abs/1903.07293)
+   異種グラフにおけるAttentionの考え方
+   <details><summary>概要</summary><div>
+    調査中
+---
 - [ ] **How Powerful are Graph Neural Networks?(2019ICLR)**  
    [[link]](https://arxiv.org/abs/1810.00826)
    [[ref1]](https://www.slideshare.net/masanaoochi3/how-powerful-are-graph-neural-networks)
    [[ref2]](https://medium.com/programming-soda/graph-neural-network%E3%81%AE%E5%87%A6%E7%90%86%E3%81%A8%E5%8A%B9%E6%9E%9C%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B-how-powerful-are-graph-neural-networks-a26ee9245cce)
    GNNの根本的な理解
    <details><summary>概要</summary><div>
-    日本語解説をもとに調査中，
+    日本語解説をもとに調査中
     
     
 
