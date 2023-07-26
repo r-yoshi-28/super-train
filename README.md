@@ -53,9 +53,10 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
 
 - [ ] **Detecting Political Opinions in Tweets through Bipartite Graph Analysis: A Skip Aggregation Graph Convolution Approach(2023   )**  
    [[link]](https://arxiv.org/abs/2304.11367)
-   GNN 近傍ノード集約の際スキップ集約メカニズムを用いる
+   ツイートとユーザをノードとすグラフにGNNを適用する際，スキップ集約メカニズムを用いてユーザ特徴量問題を解消する
    <details><summary>概要</summary><div>
-    調査中
+    ツイート中の政治的意見を検出するために，ユーザーの投稿とリツイートの行動に基づいてユーザーとツイートの二部グラフを構築し，GNNベースのノード分類問題に変換する．GNNを適用する際，ツイート表現を学習するために，新しいスキップ集約メカニズムを提案する．グラフを構築する際，ツイートノードはBERTを用いて初期特徴量を設定することができるが，ユーザノードはテキストではないため初期特徴量を設定することができない．そこで，ツイート表現を学習する際に2近傍先のノード，つまりユーザノードをスキップしたツイートノードの特徴量から学習を行うことで，先ほどの問題を解決する．
+
     
 - [ ] **Integration of global and local information for text classification(2022   )**  
    [[link]](https://link.springer.com/article/10.1007/s00521-022-07727-y)
