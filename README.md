@@ -68,5 +68,5 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    [[link]](https://arxiv.org/abs/1810.00826)
    GNNの根本的な理解
    <details><summary>概要</summary><div>
-    調査中，日本語解説(https://graphslideshare.net/masanaoochi3/how-powerful-are-graph-neural-networks)(https://medium.com/programming-soda/graph-neural-network%E3%81%AE%E5%87%A6%E7%90%86%E3%81%A8%E5%8A%B9%E6%9E%9C%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B-how-powerful-are-graph-neural-networks-a26ee9245cce)
+    調査中，日本語解説[[ref1]](https://graphslideshare.net/masanaoochi3/how-powerful-are-graph-neural-networks)[[ref2]](https://medium.com/programming-soda/graph-neural-network%E3%81%AE%E5%87%A6%E7%90%86%E3%81%A8%E5%8A%B9%E6%9E%9C%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B-how-powerful-are-graph-neural-networks-a26ee9245cce)
 
