@@ -57,13 +57,6 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
     ツイート中の政治的意見を検出するために，ユーザーの投稿とリツイートの行動に基づいてユーザーとツイートの二部グラフを構築し，GNNベースのノード分類問題に変換する．GNNを適用する際，ツイート表現を学習するために，新しいスキップ集約メカニズムを提案する．グラフを構築する際，ツイートノードはBERTを用いて初期特徴量を設定することができるが，ユーザノードはテキストではないため初期特徴量を設定することができない．そこで，ツイート表現を学習する際に2近傍先のノード，つまりユーザノードをスキップしたツイートノードの特徴量から学習を行うことで，先ほどの問題を解決する．
 
-    
-- [ ] **Integration of global and local information for text classification(2022   )**  
-   [[link]](https://link.springer.com/article/10.1007/s00521-022-07727-y)
-   テキスト分類GNN よりコンテキスト情報を取得
-   <details><summary>概要</summary><div>
-    調査中
-
 - [x] **A Heterogeneous Information Network based Cross Domain Insurance Recommendation System for Cold Start Users(2020SIGIR)**  
    [[link]](https://arxiv.org/abs/2007.15293)
    異種ネットワークの情報集約
@@ -71,5 +64,9 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
     ユーザへの保険推薦のための，異種情報ネットワークに基づくクロスドメイン推薦．
     推薦のために，3つのレベル（関係，ノード，意味）の注意集約(attention aggregation)を採用し，ユーザーと保険商品の表現を得る．具体的には，まず1ホップ異種隣接を集約するための関係的注意を提案する．これは，異なる1ホップ近傍間で同じ集計関数を使用するのではなく，関係の種類ごとに特定の集計関数を学習する．次にメタパスに基づく隣接を集約するためのノード注意，メタパスに基づく隣接集合を集約するための意味的注意を提案する．(メタパスが異なれば，意味も異なるという考えに基づき，メタパスにに基づく隣接の定義を与えている)最後に，関係的注意の集約と意味的注意の集約の結果を元のノード埋め込みに集約し，ノード表現を更新する．
 
-
+- [ ] **How Powerful are Graph Neural Networks?(2019ICLR)**  
+   [[link]](https://arxiv.org/abs/1810.00826)
+   GNNの根本的な理解
+   <details><summary>概要</summary><div>
+    調査中，日本語解説(https://graphslideshare.net/masanaoochi3/how-powerful-are-graph-neural-networks)(https://medium.com/programming-soda/graph-neural-network%E3%81%AE%E5%87%A6%E7%90%86%E3%81%A8%E5%8A%B9%E6%9E%9C%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B-how-powerful-are-graph-neural-networks-a26ee9245cce)
 
