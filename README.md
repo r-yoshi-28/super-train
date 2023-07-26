@@ -33,11 +33,11 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
     ワクチン関連のツイートの特徴として，賛成反対いがいにも，曖昧，皮肉，無関係といったツイートが多くありこれらもうまく分類できるかどうかを検証．CamemBERT というフランス語BERTモデルを微調整して使用．ツイートは，(1) 賛成 反対 中立， (2) コンテンツの種類 (科学的，政治的，社会的，またはワクチン接種の状況) に分類．(1)の分類は困難，(2)の分類は(1)よりかは高いがまずまずの結果に．そこで，ツイート本文が170文字以上のものに限定して再度実験を行うと，結果が改善された．コメント：ツイートのラベル参考になりそう．ちなみにラベル付けは手動で行っていた．
 
-- [ ] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022MIPRO)**  
+- [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022MIPRO)**  
    [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
-   新型コロナウイルス感染症ツイートのGNN基づく分類
+   GNN基づく新型コロナウイルス感染症ツイート予測
    <details><summary>概要</summary><div>
-    調査中
+    あるユーザが，今後コロナ関連のツイートをするかどうかを予測するモデルを構築．特に，node2vecを使用し，ユーザのフォロワーネットワークから抽出された特性のベクトルとしてユーザをモデル化している．
 
 - [x] **Graph Contrastive Learning with Augmentations(2020NeurIPS)**  
    [[link]](https://arxiv.org/abs/2010.13902)
