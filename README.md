@@ -51,7 +51,7 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
     調査中
 
-- [ ] **Detecting Political Opinions in Tweets through Bipartite Graph Analysis: A Skip Aggregation Graph Convolution Approach(2023   )**  
+- [x] **Detecting Political Opinions in Tweets through Bipartite Graph Analysis: A Skip Aggregation Graph Convolution Approach(2023   )**  
    [[link]](https://arxiv.org/abs/2304.11367)
    ツイートとユーザをノードとすグラフにGNNを適用する際，スキップ集約メカニズムを用いてユーザ特徴量問題を解消する
    <details><summary>概要</summary><div>
