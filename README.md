@@ -61,19 +61,16 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
     ユーザへの保険推薦のための，異種情報ネットワークに基づくクロスドメイン推薦．
     推薦のために，3つのレベル（関係，ノード，意味）の注意集約(attention aggregation)を採用し，ユーザーと保険商品の表現を得る．具体的には，まず1ホップ異種隣接を集約するための関係的注意を提案する．これは，異なる1ホップ近傍間で同じ集計関数を使用するのではなく，関係の種類ごとに特定の集計関数を学習する．次にメタパスに基づく隣接を集約するためのノード注意，メタパスに基づく隣接集合を集約するための意味的注意を提案する．(メタパスが異なれば，意味も異なるという考えに基づき，メタパスにに基づく隣接の定義を与えている)最後に，関係的注意の集約と意味的注意の集約の結果を元のノード埋め込みに集約し，ノード表現を更新する．
 ---
-- [ ] **Heterogeneous Graph Attention Network(2019WWW)**  
+- [x] **Heterogeneous Graph Attention Network(2019WWW)**  
    [[link]](https://arxiv.org/abs/1903.07293)
-   異種グラフにおけるAttentionの考え方
+   異種グラフにおけるAttentionを用いた学習
    <details><summary>概要</summary><div>
-    調査中
+   ノードとそのメタパスに基づく隣接ノードとの間の重要度を学習する「ノードレベルAttention」と，異なるメタパスの重要度を学習する「セマンティックレベルAttention」が存在する．ノードレベルAttentionでは，各メタパスごと(どのノードを基準に近傍を考えるか)の近傍ノードから，重要なノードを決定，つまり，(1)Aベースにおける近傍ノードのうち重要なもの(2)Dベースにおける近傍ノードのうち重要なものを決定する．そしてそれらの重要性を考慮して，ソースノードに情報を集約させる．「セマンティックレベルAttention」では，「ノードレベルAttention」で得られた各メタパスごとの重要ノードを考慮したソースノードのうち，それぞれのメタパスの重要性を決定する．以上のプロセスで，異種グラフの学習を行う．
 ---
-- [ ] **How Powerful are Graph Neural Networks?(2019ICLR)**  
-   [[link]](https://arxiv.org/abs/1810.00826)
-   [[ref1]](https://www.slideshare.net/masanaoochi3/how-powerful-are-graph-neural-networks)
-   [[ref2]](https://medium.com/programming-soda/graph-neural-network%E3%81%AE%E5%87%A6%E7%90%86%E3%81%A8%E5%8A%B9%E6%9E%9C%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B-how-powerful-are-graph-neural-networks-a26ee9245cce)
-   GNNの根本的な理解
+- [x] **Heterogeneous Graph Transformer(2022WWW)**  
+   [[link]](https://arxiv.org/abs/2003.01332)
+   異種グラフにおけるTransformerのアーキテクチャを参考にした学習
    <details><summary>概要</summary><div>
-    日本語解説をもとに調査中
-    
-    
+   異種グラフにおける学習において，Attentionを計算する際にTransformerのアーキテクチャを用いて異種グラフの各メタパス情報を考慮した学習を行う．具体的には，同種GNNであるGATにおけるAttentionを計算する際，Transformerのアーキテクチャを参考に各ソースノード，ターゲットノードの種類ごとに固有の表現空間に，Query,Keyとしてマッピングする．そして，GATにおけるMessageを計算する際，ターゲットノードの種類ごとに固有の表現空間に，Vakueとしてマッピングする．そうすることで，異種グラフにおける各メタパスごとに固有の表現空間を保持する．
+
 
