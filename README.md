@@ -79,6 +79,7 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    異種グラフにおけるTransformerのアーキテクチャを参考にした学習
    <details><summary>概要</summary><div>
    異種グラフにおける学習において，Attentionを計算する際にTransformerのアーキテクチャを用いて異種グラフの各メタパス情報を考慮した学習を行う．具体的には，同種GNNであるGATにおけるAttentionを計算する際，Transformerのアーキテクチャを参考に各ソースノード，ターゲットノードの種類ごとに固有の表現空間に，Query,Keyとしてマッピングする．そして，GATにおけるMessageを計算する際，ターゲットノードの種類ごとに固有の表現空間に，Vakueとしてマッピングする．そうすることで，異種グラフにおける各メタパスごとに固有の表現空間を保持する．
+---
 # その他手法
 - [x] **CSI: A Hybrid Deep Model for Fake News Detection**  
    [[link]](https://arxiv.org/abs/1703.06959)
@@ -95,6 +96,9 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    自然言語処理処理を用いたヘイトスピーチ検出と，これらのアプローチの限界について研究
    <details><summary>概要</summary><div>
    調査中
+
+
+---
 
 
 
