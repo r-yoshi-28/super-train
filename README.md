@@ -1,4 +1,4 @@
-# 論文メモ
+# BERT関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022ICDM)**  
    [[link]](https://ieeexplore.ieee.org/document/10027673)
 GNNとBERTを組み合わせて，悪質ツイートの検出
@@ -24,6 +24,7 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
     フェイクニュースの自動検出の際に，Capture，Score，Integrateという3つのモジュールからモデルを提案する．Captureは，RNNを用いてニュース記事に対するユーザの時間的表現を取得，Scoreはユーザの行動に基づいてスコアを学習し，Integrateはこの2つのモジュールの統合を行い，出力で記事がFakeかどうかを判断．ユーザの特徴量は，ユーザについては，どの記事に関与したかに着目していた
 ---
+# GNN関連
 - [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022JMIR)**  
    [[link]](https://medinform.jmir.org/2022/5/e37831)
    BERTを用いてワクチンツイートの分類ができるか検証．
@@ -61,6 +62,7 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
     ユーザへの保険推薦のための，異種情報ネットワークに基づくクロスドメイン推薦．
     推薦のために，3つのレベル（関係，ノード，意味）の注意集約(attention aggregation)を採用し，ユーザーと保険商品の表現を得る．具体的には，まず1ホップ異種隣接を集約するための関係的注意を提案する．これは，異なる1ホップ近傍間で同じ集計関数を使用するのではなく，関係の種類ごとに特定の集計関数を学習する．次にメタパスに基づく隣接を集約するためのノード注意，メタパスに基づく隣接集合を集約するための意味的注意を提案する．(メタパスが異なれば，意味も異なるという考えに基づき，メタパスにに基づく隣接の定義を与えている)最後に，関係的注意の集約と意味的注意の集約の結果を元のノード埋め込みに集約し，ノード表現を更新する．
 ---
+# その他手法
 - [x] **Heterogeneous Graph Attention Network(2019WWW)**  
    [[link]](https://arxiv.org/abs/1903.07293)
    異種グラフにおけるAttentionを用いた学習
