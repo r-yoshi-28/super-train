@@ -1,4 +1,11 @@
-# BERT関連
+# BERT(言語処理)関連
+- [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022JMIR)**  
+   [[link]](https://medinform.jmir.org/2022/5/e37831)
+   BERTを用いてワクチンツイートの分類ができるか検証．
+   <details><summary>概要</summary><div>
+    ワクチン関連のツイートの特徴として，賛成反対いがいにも，曖昧，皮肉，無関係といったツイートが多くありこれらもうまく分類できるかどうかを検証．CamemBERT というフランス語BERTモデルを微調整して使用．ツイートは，(1) 賛成 反対 中立， (2) コンテンツの種類 (科学的，政治的，社会的，またはワクチン接種の状況) に分類．(1)の分類は困難，(2)の分類は(1)よりかは高いがまずまずの結果に．そこで，ツイート本文が170文字以上のものに限定して再度実験を行うと，結果が改善された．コメント：ツイートのラベル参考になりそう．ちなみにラベル付けは手動で行っていた．
+--- 
+# GNN関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022ICDM)**  
    [[link]](https://ieeexplore.ieee.org/document/10027673)
 GNNとBERTを組み合わせて，悪質ツイートの検出
@@ -17,19 +24,6 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
    <details><summary>概要</summary><div>
     最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
----
-- [x] **CSI: A Hybrid Deep Model for Fake News Detection(2017ACM)**  
-   [[link]](https://arxiv.org/abs/1703.06959)
-   フェイクニュース検出
-   <details><summary>概要</summary><div>
-    フェイクニュースの自動検出の際に，Capture，Score，Integrateという3つのモジュールからモデルを提案する．Captureは，RNNを用いてニュース記事に対するユーザの時間的表現を取得，Scoreはユーザの行動に基づいてスコアを学習し，Integrateはこの2つのモジュールの統合を行い，出力で記事がFakeかどうかを判断．ユーザの特徴量は，ユーザについては，どの記事に関与したかに着目していた
----
-# GNN関連
-- [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022JMIR)**  
-   [[link]](https://medinform.jmir.org/2022/5/e37831)
-   BERTを用いてワクチンツイートの分類ができるか検証．
-   <details><summary>概要</summary><div>
-    ワクチン関連のツイートの特徴として，賛成反対いがいにも，曖昧，皮肉，無関係といったツイートが多くありこれらもうまく分類できるかどうかを検証．CamemBERT というフランス語BERTモデルを微調整して使用．ツイートは，(1) 賛成 反対 中立， (2) コンテンツの種類 (科学的，政治的，社会的，またはワクチン接種の状況) に分類．(1)の分類は困難，(2)の分類は(1)よりかは高いがまずまずの結果に．そこで，ツイート本文が170文字以上のものに限定して再度実験を行うと，結果が改善された．コメント：ツイートのラベル参考になりそう．ちなみにラベル付けは手動で行っていた．
 ---
 - [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022MIPRO)**  
    [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
@@ -62,7 +56,6 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
     ユーザへの保険推薦のための，異種情報ネットワークに基づくクロスドメイン推薦．
     推薦のために，3つのレベル（関係，ノード，意味）の注意集約(attention aggregation)を採用し，ユーザーと保険商品の表現を得る．具体的には，まず1ホップ異種隣接を集約するための関係的注意を提案する．これは，異なる1ホップ近傍間で同じ集計関数を使用するのではなく，関係の種類ごとに特定の集計関数を学習する．次にメタパスに基づく隣接を集約するためのノード注意，メタパスに基づく隣接集合を集約するための意味的注意を提案する．(メタパスが異なれば，意味も異なるという考えに基づき，メタパスにに基づく隣接の定義を与えている)最後に，関係的注意の集約と意味的注意の集約の結果を元のノード埋め込みに集約し，ノード表現を更新する．
 ---
-# その他手法
 - [x] **Heterogeneous Graph Attention Network(2019WWW)**  
    [[link]](https://arxiv.org/abs/1903.07293)
    異種グラフにおけるAttentionを用いた学習
@@ -74,11 +67,13 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    異種グラフにおけるTransformerのアーキテクチャを参考にした学習
    <details><summary>概要</summary><div>
    異種グラフにおける学習において，Attentionを計算する際にTransformerのアーキテクチャを用いて異種グラフの各メタパス情報を考慮した学習を行う．具体的には，同種GNNであるGATにおけるAttentionを計算する際，Transformerのアーキテクチャを参考に各ソースノード，ターゲットノードの種類ごとに固有の表現空間に，Query,Keyとしてマッピングする．そして，GATにおけるMessageを計算する際，ターゲットノードの種類ごとに固有の表現空間に，Vakueとしてマッピングする．そうすることで，異種グラフにおける各メタパスごとに固有の表現空間を保持する．
----
-- [x] **Heterogeneous Graph Transformer(2022WWW)**  
-   [[link]](https://arxiv.org/abs/2003.01332)
-   異種グラフにおけるTransformerのアーキテクチャを参考にした学習
+# その他手法
+- [x] **CSI: A Hybrid Deep Model for Fake News Detection(2017ACM)**  
+   [[link]](https://arxiv.org/abs/1703.06959)
+   フェイクニュース検出
    <details><summary>概要</summary><div>
-   異種グラフにおける学習において，Attentionを計算する際にTransformerのアーキテクチャを用いて異種グラフの各メタパス情報を考慮した学習を行う．具体的には，同種GNNであるGATにおけるAttentionを計算する際，Transformerのアーキテクチャを参考に各ソースノード，ターゲットノードの種類ごとに固有の表現空間に，Query,Keyとしてマッピングする．そして，GATにおけるMessageを計算する際，ターゲットノードの種類ごとに固有の表現空間に，Vakueとしてマッピングする．そうすることで，異種グラフにおける各メタパスごとに固有の表現空間を保持する．
+    フェイクニュースの自動検出の際に，Capture，Score，Integrateという3つのモジュールからモデルを提案する．Captureは，RNNを用いてニュース記事に対するユーザの時間的表現を取得，Scoreはユーザの行動に基づいてスコアを学習し，Integrateはこの2つのモジュールの統合を行い，出力で記事がFakeかどうかを判断．ユーザの特徴量は，ユーザについては，どの記事に関与したかに着目していた
+
+
 
 
