@@ -5,13 +5,13 @@
    <details><summary>概要</summary><div>
     ワクチン関連のツイートの特徴として，賛成反対いがいにも，曖昧，皮肉，無関係といったツイートが多くありこれらもうまく分類できるかどうかを検証．CamemBERT というフランス語BERTモデルを微調整して使用．ツイートは，(1) 賛成 反対 中立， (2) コンテンツの種類 (科学的，政治的，社会的，またはワクチン接種の状況) に分類．(1)の分類は困難，(2)の分類は(1)よりかは高いがまずまずの結果に．そこで，ツイート本文が170文字以上のものに限定して再度実験を行うと，結果が改善された．コメント：ツイートのラベル参考になりそう．ちなみにラベル付けは手動で行っていた．
 --- 
-- [x] **Hate Speech Detection Using Static BERT Embeddings**  
+- [ ] **Hate Speech Detection Using Static BERT Embeddings**  
    [[link]](https://arxiv.org/abs/2106.15537)
    ヘイトスピーチ検出で，他の自然言語処理で得られた埋め込みをBERTに置き換えることを提案
    <details><summary>概要</summary><div>
    調査中
 --- 
-- [x] **Hate speech detection and racial bias mitigation in social media based on BERT model**  
+- [ ] **Hate speech detection and racial bias mitigation in social media based on BERT model**  
    [[link]](https://arxiv.org/abs/2008.06460)
    BERTを用いたヘイトスピーチ検出と，訓練セットにおけるバイアスの影響を緩和するためのバイアス緩和メカニズムの導入
    <details><summary>概要</summary><div>
@@ -85,9 +85,14 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    フェイクニュース検出
    <details><summary>概要</summary><div>
     フェイクニュースの自動検出の際に，Capture，Score，Integrateという3つのモジュールからモデルを提案する．Captureは，RNNを用いてニュース記事に対するユーザの時間的表現を取得，Scoreはユーザの行動に基づいてスコアを学習し，Integrateはこの2つのモジュールの統合を行い，出力で記事がFakeかどうかを判断．ユーザの特徴量は，ユーザについては，どの記事に関与したかに着目していた
-- [x] **Exploring Hate Speech Detection in Multimodal Publications**  
+- [ ] **Exploring Hate Speech Detection in Multimodal Publications**  
    [[link]](https://arxiv.org/abs/1910.03814)
    ヘイトスピーチ検出の際，テキストに加え画像も考慮したモデルを提案
+   <details><summary>概要</summary><div>
+   調査中
+- [ ] **A Survey on Hate Speech Detection using Natural Language Processing**  
+   [[link]](https://aclanthology.org/W17-1101/)
+   自然言語処理処理を用いたヘイトスピーチ検出と，これらのアプローチの限界について研究
    <details><summary>概要</summary><div>
    調査中
 
