@@ -18,6 +18,25 @@
    調査中
 --- 
 # GNN関連
+- [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks**  
+   [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
+   GNNに基づく新型コロナウイルス感染症ツイート予測
+   <details><summary>概要</summary><div>
+    あるユーザが，今後コロナ関連のツイートをするかどうかを予測するモデルを構築．特に，node2vecを使用し，ユーザのフォロワーネットワークから抽出された特性のベクトルとしてユーザをモデル化している．
+---
+- [x] **Graph Contrastive Learning with Augmentations**  
+   [[link]](https://arxiv.org/abs/2010.13902)
+   GNNの対照学習
+   <details><summary>概要</summary><div>
+    対照学習の概念をGNNに適用．Graph Contrastive Learning（GCL）としている．グラフにおける不変表現の学習を促進させることが目的であり，実験により汎化性と頑健性が示された．拡張に関してはノードやエッジの削除，追加などが挙げられており，もう少し検討が必要な模様
+---
+- [x] **Local discriminative graph convolutional networks for text classification**  
+   [[link]](https://link.springer.com/article/10.1007/s00530-023-01112-y)
+   GNN 局所的大域的の両方から学習を行う
+   <details><summary>概要</summary><div>
+    従来のテキスト分類GNNの問題点として，正解ラベルと予測ラベルの適合度にのみ着目している点が挙げられる．つまり，グラフが暗黙的に符号化する局所的なクラス内多様性と局所的なクラス間類似性を無視しているといえる．テキスト分類の精度をより向上させるためには，クラス内とクラス間の両方の多様体構造を考慮することが重要となっている．そこで本論文では局所識別グラフ畳み込みネットワーク(LDGCN)を提案する．テキストデータの局所クラス間散布行列と局所クラス内散布行列を構築し，新しいLDGCNの特徴空間では，同じクラスのテキストは互いに密接にマッピングされ，異なるクラスのテキストはできるだけ離れてマッピングされるよう学習を行う．
+---
+# 異種グラフ関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media**  
    [[link]](https://ieeexplore.ieee.org/document/10027673)
 GNNとBERTを組み合わせて，悪質ツイートの検出
@@ -31,37 +50,17 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
    コロナ患者と，患者の住む市，市のある県などをノードとして異種グラフを作成．GNNより患者の感染症例を分類．複雑なアプローチを施したが結果は改善されず．つまり，今回作成した異種グラフではニューラルネットワークの学習が困難だった．原因としてはクラスの不均衡さ，不十分な特徴量が考えられる．感染者の居住地情報が感染症例の分類に役立つと考えていたが，その情報のみでは不十分だった模様．データセットの改善や強力なGNNが解決策となると考えられる．
 ---
-- [x] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs**  
-   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
-   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
-   <details><summary>概要</summary><div>
-    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
----
-- [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks**  
-   [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
-   GNNに基づく新型コロナウイルス感染症ツイート予測
-   <details><summary>概要</summary><div>
-    あるユーザが，今後コロナ関連のツイートをするかどうかを予測するモデルを構築．特に，node2vecを使用し，ユーザのフォロワーネットワークから抽出された特性のベクトルとしてユーザをモデル化している．
----
-- [x] **Graph Contrastive Learning with Augmentations**  
-   [[link]](https://arxiv.org/abs/2010.13902)
-   GNNの対照学習
-   <details><summary>概要</summary><div>
-    対照学習の概念をGNNに適用．Graph Contrastive Learning（GCL）としている．グラフにおける不変表現の学習を促進させることが目的であり，実験により汎化性と頑健性が示された．拡張に関してはノードやエッジの削除，追加などが挙げられており，もう少し検討が必要な模様
----
-# 異種グラフ関連
-- [x] **Local discriminative graph convolutional networks for text classification**  
-   [[link]](https://link.springer.com/article/10.1007/s00530-023-01112-y)
-   GNN 局所的大域的の両方から学習を行う
-   <details><summary>概要</summary><div>
-    従来のテキスト分類GNNの問題点として，正解ラベルと予測ラベルの適合度にのみ着目している点が挙げられる．つまり，グラフが暗黙的に符号化する局所的なクラス内多様性と局所的なクラス間類似性を無視しているといえる．テキスト分類の精度をより向上させるためには，クラス内とクラス間の両方の多様体構造を考慮することが重要となっている．そこで本論文では局所識別グラフ畳み込みネットワーク(LDGCN)を提案する．テキストデータの局所クラス間散布行列と局所クラス内散布行列を構築し，新しいLDGCNの特徴空間では，同じクラスのテキストは互いに密接にマッピングされ，異なるクラスのテキストはできるだけ離れてマッピングされるよう学習を行う．
----
 - [x] **Detecting Political Opinions in Tweets through Bipartite Graph Analysis: A Skip Aggregation Graph Convolution Approach**  
    [[link]](https://arxiv.org/abs/2304.11367)
    ツイートとユーザをノードとすグラフにGNNを適用する際，スキップ集約メカニズムを用いてユーザ特徴量問題を解消する
    <details><summary>概要</summary><div>
     ツイート中の政治的意見を検出するために，ユーザーの投稿とリツイートの行動に基づいてユーザーとツイートの二部グラフを構築し，GNNベースのノード分類問題に変換する．GNNを適用する際，ツイート表現を学習するために，新しいスキップ集約メカニズムを提案する．グラフを構築する際，ツイートノードはBERTを用いて初期特徴量を設定することができるが，ユーザノードはテキストではないため初期特徴量を設定することができない．そこで，ツイート表現を学習する際に2近傍先のノード，つまりユーザノードをスキップしたツイートノードの特徴量から学習を行うことで，先ほどの問題を解決する．
 ---
+- [x] **Understanding Political Polarization via Jointly Modeling Users, Connections and Multimodal Contents on Heterogeneous Graphs**  
+   [[link]](https://dl.acm.org/doi/abs/10.1145/3503161.3547898)
+   異種グラフからユーザ埋め込みを学習し，政治的な意見を検出．
+   <details><summary>概要</summary><div>
+    最終的にはその結果から政治的偏向の理解を深めることが目的.コンテンツ(ツイート)のみでなく，ユーザとツイートがエッジで結ばれた異種グラフを作成．ユーザノードの初期特徴量はフォローフォロワー数やプロフィール文，ツイートノードはテキスト情報と投稿したユーザ情報から算出．この異種グラフにGNNを適用し政治的偏向の理解に有効なembeddingを得る．同種のGNNフレームワークを凌駕する精度でユーザー埋め込みを学習．
 - [x] **A Heterogeneous Information Network based Cross Domain Insurance Recommendation System for Cold Start Users**  
    [[link]](https://arxiv.org/abs/2007.15293)
    異種ネットワークの情報集約
