@@ -1,4 +1,4 @@
-# テキストベース関連
+## テキストベース関連
 - [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022)**  
    [[link]](https://medinform.jmir.org/2022/5/e37831)
    BERTを用いてワクチンツイートの分類ができるか検証．
@@ -23,7 +23,7 @@
    <details><summary>概要</summary><div>
    先程の「BERTを用いたヘイトスピーチ検出」の改善手法．訓練された分類器から生じるバイアスについて問題視．まず，BERTと呼ばれる既存の事前訓練済み言語モデルに基づくヘイトスピーチ検出のための転移学習アプローチを導入し，Twitter上の人種差別，性差別，憎悪または攻撃的なコンテンツに注釈を付けた2つの公に利用可能なデータセットで提案モデルを評価．次に，ヘイトスピーチ検出タスクにおけるバイアス緩和メカニズムを導入して，事前訓練済みBERTベースモデルの微調整中に訓練セットにおけるバイアスの影響を緩和する．
 --- 
-# グラフベース関連
+## グラフベース関連
 - [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022)**  
    [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
    GNNに基づく新型コロナウイルス感染症ツイート予測
@@ -48,7 +48,7 @@
    <details><summary>概要</summary><div>
     GCNにおける畳み込みで，近傍ソースノードの重要性を推定するAttention演算子，近傍ソースノードの情報を抽出するMessage演算子，Attention演算子とMessage演算子の積から全近傍情報を集約するAggregate演算子の計3つの演算子から，各近傍ソースノードのAttentionを考慮した学習を行い，重要なソースノードの情報をより集約するようなメカニズムを確率
 ---
-# 異種グラフ関連
+## 異種グラフ関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022)**  
    [[link]](https://ieeexplore.ieee.org/document/10027673)
 GNNとBERTを組み合わせて，悪質ツイートの検出
@@ -92,7 +92,7 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
    異種グラフにおける学習において，Attentionを計算する際にTransformerのアーキテクチャを用いて異種グラフの各メタパス情報を考慮した学習を行う．具体的には，同種GNNであるGATにおけるAttentionを計算する際，Transformerのアーキテクチャを参考に各ソースノード，ターゲットノードの種類ごとに固有の表現空間に，Query,Keyとしてマッピングする．そして，GATにおけるMessageを計算する際，ターゲットノードの種類ごとに固有の表現空間に，Vakueとしてマッピングする．そうすることで，異種グラフにおける各メタパスごとに固有の表現空間を保持する．
 ---
-# その他
+## その他
 - [x] **CSI: A Hybrid Deep Model for Fake News Detection(2017)**  
    [[link]](https://arxiv.org/abs/1703.06959)
    フェイクニュース検出
