@@ -23,6 +23,18 @@
    <details><summary>概要</summary><div>
    先程の「BERTを用いたヘイトスピーチ検出」の改善手法．訓練された分類器から生じるバイアスについて問題視．まず，BERTと呼ばれる既存の事前訓練済み言語モデルに基づくヘイトスピーチ検出のための転移学習アプローチを導入し，Twitter上の人種差別，性差別，憎悪または攻撃的なコンテンツに注釈を付けた2つの公に利用可能なデータセットで提案モデルを評価．次に，ヘイトスピーチ検出タスクにおけるバイアス緩和メカニズムを導入して，事前訓練済みBERTベースモデルの微調整中に訓練セットにおけるバイアスの影響を緩和する．
 --- 
+- [ ] **Assessing the Impact of Contextual Information in Hate Speech Detection(2022)**  
+   [[link]](https://ieeexplore.ieee.org/abstract/document/10076443)
+   ヘイトスピーチ検出において，コンテキスト情報(返信情報)などを含める有効性を検証
+   <details><summary>概要</summary><div>
+   調査中
+--- 
+- [ ] **Detection of Hate Speech using BERT and Hate Speech Word Embedding with Deep Model(2023)**  
+   [[link]](https://www.tandfonline.com/doi/full/10.1080/08839514.2023.2166719)
+   ヘイトスピーチ検出において，意図的なスペルミスや略語に対応するため，ドメイン固有の単語表現を用いた手法の提案
+   <details><summary>概要</summary><div>
+   調査中
+---
 ## グラフベース関連
 - [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022)**  
    [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
@@ -122,5 +134,10 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
    ヘイトスピーチの自動検出に関する調査．これらのタスクは通常，教師付き学習問題としてフレーム化される．テキストから得られた情報は，ヘイトスピーチの存在を示唆する唯一の手がかりではないかもしれないことを主張．メタ情報または他のモダリティからの情報(例えば，メッセージに添付された画像)によって補完することができると考えられる．多くの複雑な特徴の一般的な有効性について判断することは困難である．なぜなら，ほとんどの場合，それらは個々のデータセットでのみ評価され，そのほとんどは公に利用可能ではなく，特定の少数民族のいじめなどヘイトスピーチのサブタイプのみを扱うことが多いからである．
 ---
-
+- [ ] **On the rise of fear speech in online social media(2023)**  
+   [[link]](https://www.pnas.org/doi/abs/10.1073/pnas.2212270120)
+   ヘイトスピーチに変わる悪質な投稿として，fear speech(恐怖スピーチ)について紹介
+   <details><summary>概要</summary><div>
+   調査中
+---
 
