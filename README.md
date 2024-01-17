@@ -11,9 +11,15 @@
    <details><summary>概要</summary><div>
    調査中
 --- 
+- [ ] **A BERT-Based Transfer Learning Approach for Hate Speech Detection in Online Social Media(2019)**  
+   [[link]](https://arxiv.org/abs/1910.12574)
+   BERTを用いてヘイトスピーチ検出を行う
+   <details><summary>概要</summary><div>
+   調査中
+--- 
 - [ ] **Hate speech detection and racial bias mitigation in social media based on BERT model(2020)**  
    [[link]](https://arxiv.org/abs/2008.06460)
-   BERTを用いたヘイトスピーチ検出と，訓練セットにおけるバイアスの影響を緩和するためのバイアス緩和メカニズムの導入
+   BERTを用いたヘイトスピーチ検出と，訓練セットにおけるバイアスの影響を緩和するためのバイアス緩和メカニズムの導入(先程の手法の改善)
    <details><summary>概要</summary><div>
    調査中
 --- 
@@ -35,6 +41,12 @@
    GNN 局所的大域的の両方から学習を行う
    <details><summary>概要</summary><div>
     従来のテキスト分類GNNの問題点として，正解ラベルと予測ラベルの適合度にのみ着目している点が挙げられる．つまり，グラフが暗黙的に符号化する局所的なクラス内多様性と局所的なクラス間類似性を無視しているといえる．テキスト分類の精度をより向上させるためには，クラス内とクラス間の両方の多様体構造を考慮することが重要となっている．そこで本論文では局所識別グラフ畳み込みネットワーク(LDGCN)を提案する．テキストデータの局所クラス間散布行列と局所クラス内散布行列を構築し，新しいLDGCNの特徴空間では，同じクラスのテキストは互いに密接にマッピングされ，異なるクラスのテキストはできるだけ離れてマッピングされるよう学習を行う．
+---
+- [ ] **Graph Attention Networks(2017)**  
+   [[link]](https://arxiv.org/abs/1710.10903)
+   GNN GAT
+   <details><summary>概要</summary><div>
+    調査中
 ---
 # 異種グラフ関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022)**  
@@ -80,12 +92,19 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
    異種グラフにおける学習において，Attentionを計算する際にTransformerのアーキテクチャを用いて異種グラフの各メタパス情報を考慮した学習を行う．具体的には，同種GNNであるGATにおけるAttentionを計算する際，Transformerのアーキテクチャを参考に各ソースノード，ターゲットノードの種類ごとに固有の表現空間に，Query,Keyとしてマッピングする．そして，GATにおけるMessageを計算する際，ターゲットノードの種類ごとに固有の表現空間に，Vakueとしてマッピングする．そうすることで，異種グラフにおける各メタパスごとに固有の表現空間を保持する．
 ---
-# その他手法
+# その他
 - [x] **CSI: A Hybrid Deep Model for Fake News Detection(2017)**  
    [[link]](https://arxiv.org/abs/1703.06959)
    フェイクニュース検出
    <details><summary>概要</summary><div>
     フェイクニュースの自動検出の際に，Capture，Score，Integrateという3つのモジュールからモデルを提案する．Captureは，RNNを用いてニュース記事に対するユーザの時間的表現を取得，Scoreはユーザの行動に基づいてスコアを学習し，Integrateはこの2つのモジュールの統合を行い，出力で記事がFakeかどうかを判断．ユーザの特徴量は，ユーザについては，どの記事に関与したかに着目していた
+---
+- [ ] **A Survey on Automatic Detection of Hate Speech in Text(2018)**  
+   [[link]](https://dl.acm.org/doi/10.1145/3232676)
+   ヘイトスピーチの自動検出と，ヘイトスピーチの定義についての研究
+   <details><summary>概要</summary><div>
+   調査中
+---
 - [ ] **Exploring Hate Speech Detection in Multimodal Publications(2019)**  
    [[link]](https://arxiv.org/abs/1910.03814)
    ヘイトスピーチ検出の際，テキストに加え画像も考慮したモデルを提案
@@ -96,8 +115,6 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    自然言語処理処理を用いたヘイトスピーチ検出と，これらのアプローチの限界について研究
    <details><summary>概要</summary><div>
    調査中
-
-
 ---
 
 
