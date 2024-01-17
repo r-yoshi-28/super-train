@@ -5,23 +5,23 @@
    <details><summary>概要</summary><div>
     ワクチン関連のツイートの特徴として，賛成反対いがいにも，曖昧，皮肉，無関係といったツイートが多くありこれらもうまく分類できるかどうかを検証．CamemBERT というフランス語BERTモデルを微調整して使用．ツイートは，(1) 賛成 反対 中立， (2) コンテンツの種類 (科学的，政治的，社会的，またはワクチン接種の状況) に分類．(1)の分類は困難，(2)の分類は(1)よりかは高いがまずまずの結果に．そこで，ツイート本文が170文字以上のものに限定して再度実験を行うと，結果が改善された．コメント：ツイートのラベル参考になりそう．ちなみにラベル付けは手動で行っていた．
 --- 
-- [ ] **Hate Speech Detection Using Static BERT Embeddings(2021)**  
+- [x] **Hate Speech Detection Using Static BERT Embeddings(2021)**  
    [[link]](https://arxiv.org/abs/2106.15537)
    ヘイトスピーチ検出で，他の自然言語処理で得られた埋め込みをBERTに置き換えることを提案
    <details><summary>概要</summary><div>
-   調査中
+   ETHOSヘイトスピーチ検出データセットを使用し，単語埋め込み(fastText(FT)，GloVe(GV)，またはFT+GVをBERT埋め込みで置き換えまたは統合することによって，ヘイトスピーチ検出分類器のパフォーマンスを分析．実験の結果，単語埋め込みとしてFT，GV，またはFT+GVを使用する場合と比較して，BERTを使用した場合の方がパフォーマンスが優れていることを確認．
 --- 
-- [ ] **A BERT-Based Transfer Learning Approach for Hate Speech Detection in Online Social Media(2019)**  
+- [x] **A BERT-Based Transfer Learning Approach for Hate Speech Detection in Online Social Media(2019)**  
    [[link]](https://arxiv.org/abs/1910.12574)
    BERTを用いてヘイトスピーチ検出を行う
    <details><summary>概要</summary><div>
-   調査中
+   BERTベースのヘイトスピーチ検出の先駆けになるような研究．ヘイトスピーチ検出にBERTに基づく新しい転移学習アプローチを導入．特に，転移学習に基づく新しい微調整方法を使用して，ソーシャルメディアコンテンツ内の憎悪に満ちたコンテキストをキャプチャするBERTの機能を調査．提案したアプローチを評価するためにTwitterの公に利用可能なデータセットを使用した実験結果では，このソリューションが既存のアプローチと比較して，精度とリコールの点でかなりのパフォーマンスを得ることを示した．
 --- 
-- [ ] **Hate speech detection and racial bias mitigation in social media based on BERT model(2020)**  
+- [x] **Hate speech detection and racial bias mitigation in social media based on BERT model(2020)**  
    [[link]](https://arxiv.org/abs/2008.06460)
-   BERTを用いたヘイトスピーチ検出と，訓練セットにおけるバイアスの影響を緩和するためのバイアス緩和メカニズムの導入(先程の手法の改善)
+   BERTを用いたヘイトスピーチ検出と，訓練セットにおけるバイアスの影響を緩和するためのバイアス緩和メカニズムの導入
    <details><summary>概要</summary><div>
-   調査中
+   先程の「BERTを用いたヘイトスピーチ検出」の改善手法．訓練された分類器から生じるバイアスについて問題視．まず，BERTと呼ばれる既存の事前訓練済み言語モデルに基づくヘイトスピーチ検出のための転移学習アプローチを導入し，Twitter上の人種差別，性差別，憎悪または攻撃的なコンテンツに注釈を付けた2つの公に利用可能なデータセットで提案モデルを評価．次に，ヘイトスピーチ検出タスクにおけるバイアス緩和メカニズムを導入して，事前訓練済みBERTベースモデルの微調整中に訓練セットにおけるバイアスの影響を緩和する．
 --- 
 # GNN関連
 - [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022)**  
@@ -42,11 +42,11 @@
    <details><summary>概要</summary><div>
     従来のテキスト分類GNNの問題点として，正解ラベルと予測ラベルの適合度にのみ着目している点が挙げられる．つまり，グラフが暗黙的に符号化する局所的なクラス内多様性と局所的なクラス間類似性を無視しているといえる．テキスト分類の精度をより向上させるためには，クラス内とクラス間の両方の多様体構造を考慮することが重要となっている．そこで本論文では局所識別グラフ畳み込みネットワーク(LDGCN)を提案する．テキストデータの局所クラス間散布行列と局所クラス内散布行列を構築し，新しいLDGCNの特徴空間では，同じクラスのテキストは互いに密接にマッピングされ，異なるクラスのテキストはできるだけ離れてマッピングされるよう学習を行う．
 ---
-- [ ] **Graph Attention Networks(2017)**  
+- [x] **Graph Attention Networks(2017)**  
    [[link]](https://arxiv.org/abs/1710.10903)
-   GNN GAT
+   GNNにおける畳み込みにおいてAttentionの機構を組み込む．
    <details><summary>概要</summary><div>
-    調査中
+    GCNにおける畳み込みで，近傍ソースノードの重要性を推定するAttention演算子，近傍ソースノードの情報を抽出するMessage演算子，Attention演算子とMessage演算子の積から全近傍情報を集約するAggregate演算子の計3つの演算子から，各近傍ソースノードのAttentionを考慮した学習を行い，重要なソースノードの情報をより集約するようなメカニズムを確率
 ---
 # 異種グラフ関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022)**  
@@ -99,22 +99,22 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
     フェイクニュースの自動検出の際に，Capture，Score，Integrateという3つのモジュールからモデルを提案する．Captureは，RNNを用いてニュース記事に対するユーザの時間的表現を取得，Scoreはユーザの行動に基づいてスコアを学習し，Integrateはこの2つのモジュールの統合を行い，出力で記事がFakeかどうかを判断．ユーザの特徴量は，ユーザについては，どの記事に関与したかに着目していた
 ---
-- [ ] **A Survey on Automatic Detection of Hate Speech in Text(2018)**  
+- [x] **A Survey on Automatic Detection of Hate Speech in Text(2018)**  
    [[link]](https://dl.acm.org/doi/10.1145/3232676)
    ヘイトスピーチの自動検出と，ヘイトスピーチの定義についての研究
    <details><summary>概要</summary><div>
-   調査中
+   テキスト中のヘイトスピーチの自動検出が過去数年にわたってどのように進化してきたかについての調査．最初に，SNSから他の媒体までの異なる状況におけるヘイトスピーチの概念を分析した．さらに，他文献に見られる分類のための例と規則を，それらの規則に賛成または反対する議論とともに提示した．批判的な見解としては，我々が文献に見られる他の視点よりも，ヘイトスピーチについてより包括的で一般的な定義を持っていることを指摘した．これは，インターネットやSNS上の微妙な形態の差別も発見されるべきであると提案するからである．我々の分析により，ヘイトスピーチをネットいじめ，暴言，差別，毒，炎上，過激主義，過激化と比較することが重要であると結論づけた．
 ---
-- [ ] **Exploring Hate Speech Detection in Multimodal Publications(2019)**  
+- [x] **Exploring Hate Speech Detection in Multimodal Publications(2019)**  
    [[link]](https://arxiv.org/abs/1910.03814)
    ヘイトスピーチ検出の際，テキストに加え画像も考慮したモデルを提案
    <details><summary>概要</summary><div>
-   調査中
-- [ ] **A Survey on Hate Speech Detection using Natural Language Processing(2017)**  
+   本研究では，テキストと画像によって形成される投稿(Twitterなど)から大規模なデータセットを収集して注釈を付け，ヘイトスピーチ検出のためにテキストと視覚情報を共同で分析する異なるモデルを提案し，それらを単一モード検出と比較．定量的および定性的結果を提供し，提案されたタスクの課題を分析，結果としては，画像がヘイトスピーチ検出タスクに有用であっても，現在のマルチモーダルモデルはテキストのみを分析するモデルよりも優れていないことが分かった．
+- [x] **A Survey on Hate Speech Detection using Natural Language Processing(2017)**  
    [[link]](https://aclanthology.org/W17-1101/)
    自然言語処理処理を用いたヘイトスピーチ検出と，これらのアプローチの限界について研究
    <details><summary>概要</summary><div>
-   調査中
+   ヘイトスピーチの自動検出に関する調査．これらのタスクは通常，教師付き学習問題としてフレーム化される．テキストから得られた情報は，ヘイトスピーチの存在を示唆する唯一の手がかりではないかもしれないことを主張．メタ情報または他のモダリティからの情報(例えば，メッセージに添付された画像)によって補完することができると考えられる．多くの複雑な特徴の一般的な有効性について判断することは困難である．なぜなら，ほとんどの場合，それらは個々のデータセットでのみ評価され，そのほとんどは公に利用可能ではなく，特定の少数民族のいじめなどヘイトスピーチのサブタイプのみを扱うことが多いからである．
 ---
 
 
