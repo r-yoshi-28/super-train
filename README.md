@@ -1,4 +1,4 @@
-# BERT(言語処理)関連
+# テキストベース関連
 - [x] **An Analysis of French-Language Tweets About COVID-19 Vaccines: Supervised Learning Approach(2022)**  
    [[link]](https://medinform.jmir.org/2022/5/e37831)
    BERTを用いてワクチンツイートの分類ができるか検証．
@@ -23,7 +23,7 @@
    <details><summary>概要</summary><div>
    先程の「BERTを用いたヘイトスピーチ検出」の改善手法．訓練された分類器から生じるバイアスについて問題視．まず，BERTと呼ばれる既存の事前訓練済み言語モデルに基づくヘイトスピーチ検出のための転移学習アプローチを導入し，Twitter上の人種差別，性差別，憎悪または攻撃的なコンテンツに注釈を付けた2つの公に利用可能なデータセットで提案モデルを評価．次に，ヘイトスピーチ検出タスクにおけるバイアス緩和メカニズムを導入して，事前訓練済みBERTベースモデルの微調整中に訓練セットにおけるバイアスの影響を緩和する．
 --- 
-# GNN関連
+# グラフベース関連
 - [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022)**  
    [[link]](https://ieeexplore.ieee.org/abstract/document/9803426)
    GNNに基づく新型コロナウイルス感染症ツイート予測
