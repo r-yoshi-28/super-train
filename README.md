@@ -23,17 +23,17 @@
    <details><summary>概要</summary><div>
    先程の「BERTを用いたヘイトスピーチ検出」の改善手法．訓練された分類器から生じるバイアスについて問題視．まず，BERTと呼ばれる既存の事前訓練済み言語モデルに基づくヘイトスピーチ検出のための転移学習アプローチを導入し，Twitter上の人種差別，性差別，憎悪または攻撃的なコンテンツに注釈を付けた2つの公に利用可能なデータセットで提案モデルを評価．次に，ヘイトスピーチ検出タスクにおけるバイアス緩和メカニズムを導入して，事前訓練済みBERTベースモデルの微調整中に訓練セットにおけるバイアスの影響を緩和する．
 --- 
-- [ ] **Assessing the Impact of Contextual Information in Hate Speech Detection(2022)**  
+- [x] **Assessing the Impact of Contextual Information in Hate Speech Detection(2022)**  
    [[link]](https://ieeexplore.ieee.org/abstract/document/10076443)
    ヘイトスピーチ検出において，コンテキスト情報(返信情報)などを含める有効性を検証
    <details><summary>概要</summary><div>
-   調査中
+   コンテキスト情報を持つことの重要さを評価するために，提案されたモデルに対して3つの異なるタイプの入力を検討．1)コンテキストを持たないコメント(None)，2)コンテキストとして返信されたツイートを持つコメント(Tweet)，3)返信されたツイートとニュース記事のテキストを持つコメント(Full)．ヘイトスピーチか否かの2値分類と，ヘイトスピーチの中の更に細かい分類まで行う多クラス分類の2つのタスクを行い，コンテキストによって2値分類では中程度の改善が見られ，多クラス分類ではより大幅な改善が見られた．
 --- 
-- [ ] **Detection of Hate Speech using BERT and Hate Speech Word Embedding with Deep Model(2023)**  
+- [x] **Detection of Hate Speech using BERT and Hate Speech Word Embedding with Deep Model(2023)**  
    [[link]](https://www.tandfonline.com/doi/full/10.1080/08839514.2023.2166719)
    ヘイトスピーチ検出において，意図的なスペルミスや略語に対応するため，ドメイン固有の単語表現を用いた手法の提案
    <details><summary>概要</summary><div>
-   調査中
+   ヘイトコミュニティは検出を回避するためにコミュニケーションにおいて略語，意図的なスペルミス，暗号化された単語を使用する傾向があり，ヘイトスピーチ検出タスクにさらなる課題があると指摘．論文では，特徴としてのドメイン固有の単語埋め込みとヘイトスピーチを自動的に検出するための分類器としての双方向性LSTMベースのディープモデルを利用することの実現可能性を検討．実験の結果，双方向性LSTMベースのディープモデルを用いたドメイン固有の単語埋め込みは93%のf1スコアを達成，BERTは利用可能なヘイトスピーチデータセットからの結合されたバランスのとれたデータセットで96%のf1スコアを達成．結論として，現在のSNSドメイン固有のコンテンツから大規模な事前訓練済みモデルを構築することは非常に有用と結論付けた．
 ---
 ## グラフベース関連
 - [x] **Prediction of COVID-19 tweeting: classification based on graph neural networks(2022)**  
@@ -60,11 +60,12 @@
    <details><summary>概要</summary><div>
     GCNにおける畳み込みで，近傍ソースノードの重要性を推定するAttention演算子，近傍ソースノードの情報を抽出するMessage演算子，Attention演算子とMessage演算子の積から全近傍情報を集約するAggregate演算子の計3つの演算子から，各近傍ソースノードのAttentionを考慮した学習を行い，重要なソースノードの情報をより集約するようなメカニズムを確率
 ---
-- [ ] **Towards more robust hate speech detection: using social context and user data(2023)**  
+- [x] **Towards more robust hate speech detection: using social context and user data(2023)**  
    [[link]](https://link.springer.com/article/10.1007/s13278-023-01051-6)
    ヘイトスピーチ検出において，テキスト情報に加えユーザ情報などを加えたフレームワークを提案
    <details><summary>概要</summary><div>
-   調査中
+   ヘイトスピーチのニュアンスをより良く捕捉し検出精度を改善するために，投稿者のテキスト，社会的コンテキスト及び言語的特徴を取り入れる．ヘイトスピーチを検出するためにテキスト内容と社会的コンテキストを組み合わせたフレームワークを提案．具体的には，変分グラフオートエンコーダ(VGAE)を使用してソーシャルネットワーク，テキスト，およびプロフィール情報を使用して投稿者の統一された特徴を共同で学習．この方法を2つの多様なTwitterデータセットで評価し，既存の最先端の方法よりも大幅に優れていることを示した．![image](https://github.com/r-yoshi-28/super-train/assets/134539474/54da451e-1dfd-40e2-ac35-b73a4e2d5882)
+
 ---
 ## 異種グラフ関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022)**  
