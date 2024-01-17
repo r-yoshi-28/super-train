@@ -48,6 +48,12 @@
    <details><summary>概要</summary><div>
     GCNにおける畳み込みで，近傍ソースノードの重要性を推定するAttention演算子，近傍ソースノードの情報を抽出するMessage演算子，Attention演算子とMessage演算子の積から全近傍情報を集約するAggregate演算子の計3つの演算子から，各近傍ソースノードのAttentionを考慮した学習を行い，重要なソースノードの情報をより集約するようなメカニズムを確率
 ---
+- [ ] **Towards more robust hate speech detection: using social context and user data(2023)**  
+   [[link]](https://link.springer.com/article/10.1007/s13278-023-01051-6)
+   ヘイトスピーチ検出において，テキスト情報に加えユーザ情報などを加えたフレームワークを提案
+   <details><summary>概要</summary><div>
+   調査中
+---
 ## 異種グラフ関連
  - [x] **GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media(2022)**  
    [[link]](https://ieeexplore.ieee.org/document/10027673)
@@ -116,6 +122,5 @@ GNNとBERTを組み合わせて，悪質ツイートの検出
    <details><summary>概要</summary><div>
    ヘイトスピーチの自動検出に関する調査．これらのタスクは通常，教師付き学習問題としてフレーム化される．テキストから得られた情報は，ヘイトスピーチの存在を示唆する唯一の手がかりではないかもしれないことを主張．メタ情報または他のモダリティからの情報(例えば，メッセージに添付された画像)によって補完することができると考えられる．多くの複雑な特徴の一般的な有効性について判断することは困難である．なぜなら，ほとんどの場合，それらは個々のデータセットでのみ評価され，そのほとんどは公に利用可能ではなく，特定の少数民族のいじめなどヘイトスピーチのサブタイプのみを扱うことが多いからである．
 ---
-
 
 
